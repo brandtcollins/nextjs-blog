@@ -4,6 +4,7 @@ import { iPosts } from "../../ts/interfaces";
 import Image from "next/image";
 import fs from "fs";
 import matter from "gray-matter";
+import formatDistanceToNow from "date-fns/formatDistanceToNow";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
@@ -29,21 +30,20 @@ interface BlogProps {
 
 const Blog: FunctionComponent<BlogProps> = ({ posts }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0">
+    <div className="max-w-screen-xl w-full">
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className="border border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col"
+          className="border-b rounded overflow-hidden flex flex-col py-8 px-4 hover:bg-slate-100"
         >
           <Link href={`/blog/${slug}`}>
             <a>
-              <Image
-                width={650}
-                height={340}
-                alt={frontmatter.title}
-                src={`/${frontmatter.socialImage}`}
-              />
-              <h1 className="p-4">{frontmatter.title}</h1>
+              <h1 className="text-xl">{frontmatter.title}</h1>
+              <h3 className="">
+                {formatDistanceToNow(new Date(frontmatter.date), {
+                  addSuffix: true,
+                })}
+              </h3>
             </a>
           </Link>
         </div>

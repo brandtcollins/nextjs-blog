@@ -3,7 +3,10 @@ import matter from "gray-matter";
 import { GetStaticProps } from "next";
 import { FunctionComponent } from "react";
 import md from "markdown-it";
-import { iPosts } from "../../ts/interfaces";
+import { iFrontmatter, iPosts } from "../../ts/interfaces";
+import { formatDistanceToNow } from "date-fns";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const slug = context.params?.slug;
@@ -31,7 +34,7 @@ export async function getStaticPaths() {
 }
 
 interface PostPageProps {
-  frontmatter: iPosts[];
+  frontmatter: iFrontmatter;
   content: string;
 }
 
@@ -39,12 +42,22 @@ const PostPage: FunctionComponent<PostPageProps> = ({
   frontmatter,
   content,
 }) => {
-  console.log(frontmatter);
-  console.log(content);
+  const router = useRouter();
+
   return (
-    <div className="prose mx-auto">
-      <h1>{frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+    <div className="flex flex-col">
+      <div className="py-8">
+        <Link href="/blog">Back</Link>
+      </div>
+      <div className="prose mx-auto">
+        <h1>{frontmatter.title}</h1>
+        <p>
+          {formatDistanceToNow(new Date(frontmatter.date), {
+            addSuffix: true,
+          })}
+        </p>
+        <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+      </div>
     </div>
   );
 };
