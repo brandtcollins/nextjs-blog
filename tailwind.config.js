@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         whitebg: "#f6f4f0",
+        whitebgHover: "#e9e8e5",
         grayBorder: "#cfceca",
       },
     },

@@ -45,7 +45,7 @@ const PostPage: FunctionComponent<PostPageProps> = ({
   const router = useRouter();
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col mb-24">
       <div className="py-8">
         <Link href="/blog">Back</Link>
       </div>

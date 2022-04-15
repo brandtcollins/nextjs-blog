@@ -34,7 +34,7 @@ const Blog: FunctionComponent<BlogProps> = ({ posts }) => {
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className="border-b rounded overflow-hidden flex flex-col py-8 px-4 hover:bg-slate-100"
+          className="border-b rounded overflow-hidden flex flex-col py-8 px-4 hover:bg-whitebgHover"
         >
           <Link href={`/blog/${slug}`}>
             <a>
