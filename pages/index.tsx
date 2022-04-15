@@ -6,7 +6,11 @@ interface HomeProps {
 }
 
 const Home: FunctionComponent<HomeProps> = ({ posts }) => {
-  return <div>This is the index page</div>;
+  return (
+    <div className="h-screen">
+      <h2>This is the index page</h2>
+    </div>
+  );
 };
 
 export default Home;

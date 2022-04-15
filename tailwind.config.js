@@ -4,7 +4,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        whitebg: "#f6f4f0",
+        grayBorder: "#cfceca",
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };
