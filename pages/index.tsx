@@ -8,7 +8,7 @@ interface HomeProps {
 const Home: FunctionComponent<HomeProps> = ({ posts }) => {
   return (
     <div className="h-screen">
-      <h2>This is the index page</h2>
+      <h2>This is the index page.</h2>
     </div>
   );
 };
