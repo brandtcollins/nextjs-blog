@@ -34,12 +34,12 @@ const Blog: FunctionComponent<BlogProps> = ({ posts }) => {
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className="border-b rounded overflow-hidden flex flex-col py-8 px-4 hover:bg-whitebgHover"
+          className="border-b rounded overflow-hidden flex flex-col py-8 px-4 hover:bg-whitebgHover dark:hover:bg-hoverDarkBlue dark:border-lightGray dark:text-offWhite"
         >
           <Link href={`/blog/${slug}`}>
             <a>
               <h1 className="text-xl">{frontmatter.title}</h1>
-              <h3 className="">
+              <h3 className="dark:text-lightGray">
                 {formatDistanceToNow(new Date(frontmatter.date), {
                   addSuffix: true,
                 })}

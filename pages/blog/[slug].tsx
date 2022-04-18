@@ -49,7 +49,7 @@ const PostPage: FunctionComponent<PostPageProps> = ({
       <div className="py-8">
         <Link href="/blog">Back</Link>
       </div>
-      <div className="prose mx-auto">
+      <div className="prose dark:prose-invert mx-auto ">
         <h1>{frontmatter.title}</h1>
         <p>
           {formatDistanceToNow(new Date(frontmatter.date), {
