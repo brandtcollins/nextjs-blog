@@ -39,7 +39,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
             <Link href="/">home</Link>
           </li>
           <li className="hover:bg-whitebgHover p-3 rounded-full py-2 px-4 mx-4">
-            <Link href="/blog">blog</Link>
+            <Link href="">projects</Link>
           </li>
           <li className="hover:bg-whitebgHover p-3 rounded-full py-2 px-4 mx-4">
             github

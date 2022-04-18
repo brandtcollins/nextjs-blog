@@ -75,11 +75,10 @@ Nothing - Not yet a priority
 
 - **HTML**
   - [Canvas ✔️](https://www.youtube.com/watch?v=8ZGAzJ0drl0)
-  - [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial)
   - **Charts and Graphs**
     - [Chart.js](https://www.chartjs.org/)
     - [Chartist ✔️](https://gionkunz.github.io/chartist-js/)
-- **CSS** | [Example App](https://spduk.github.io/dgd/#/)
+- **CSS**
   - [SVG](https://svgontheweb.com/)
   - [D3](https://d3js.org/)
   - [Browser Compatibility ✔️](https://caniuse.com/)
@@ -108,27 +107,13 @@ Nothing - Not yet a priority
   - Symbols ✔️
   - Generators ✔️
   - Decorators ✔️
-  - Proxies ✔️
   - forEach, Filter, Map and Reduce ✔️
   - [Maps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) ✔️
 - **Functional Programming**
-  - [Ramda 🚧](https://ramdajs.com/)
+  - [Ramda](https://ramdajs.com/)
   - [Closure ✔️](https://stackoverflow.com/questions/111102/how-do-javascript-closures-work)
   - Higher-Order Functions ✔️
   - [Currying and partials ✔️](https://javascript.info/currying-partials)
-  - Composition ✔️
-  - Purity and Side effects ✔️
-  - Point-free Style ✔️
-  - Recursion ✔️
-  - [Functors ✔️](https://hackernoon.com/functors-in-javascript-20a647b8f39f)
-  - Monads 🚧
-  - [Everything else 🚧](https://github.com/hemanth/functional-programming-jargon)
-- **Object Oriented Programming**
-  - [Prototypal Inheritance ✔️](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
-  - [Classes ✔️](https://javascript.info/class)
-  - Property Getters and Setters ✔️
-  - Function Binding ✔️
-  - Constructors ✔️
 - **React**
   - JSX ✔️
   - Props ✔️
@@ -143,55 +128,45 @@ Nothing - Not yet a priority
   - SyntheticEvent ✔️
   - File structure ✔️
   - **Testing**
-    - [Jest ✔️](https://jestjs.io/)
-    - [PropTypes ✔️](https://reactjs.org/docs/typechecking-with-proptypes.html)
+    - [Jest 🛠](https://jestjs.io/)
   - **Basic state management**
-    - [MobX ✔️](https://mobx.js.org/)
+    - [MobX 🛠](https://mobx.js.org/)
     - [Redux ✔️](https://redux.js.org/introduction)
-- **Vue** 🚧
+    - [React Query ✔️](https://react-query.tanstack.com/)
+- **Vue** 🛠
   - Templates ✔️
   - Props ✔️
   - Component Basics
     - Data ✔️
     - Computed ✔️
-    - Watch 🚧
-    - Methods ✔️
-  - [Directives ✔️](https://flaviocopes.com/vue-directives/)
+    - Watch ✔️
+    - Methods 🛠
+  - [Directives 🛠](https://flaviocopes.com/vue-directives/)
   - Class / Style bindings ✔️
-  - \$refs ✔️
-  - Slots ✔️
   - Component Lifecycle Methods ✔️
   - Vue Router ✔️
   - Event Handling ✔️
   - Dynamic Components ✔️
-  - VueX ✔️
-  - [Transitions](https://vuejs.org/v2/guide/transitions.html)
-  - [Render functions & JSX](https://vuejs.org/v2/guide/render-function.html)
-  - [Mixins](https://vuejs.org/v2/guide/mixins.html)
-  - Server Side Rendering
 - **Extras**
   - [Firebase ✔️](https://firebase.google.com/)
+  - [Supabase ✔️](https://supabase.com/)
 
 ### Advanced Front-End
 
 - **Javascript**
   - [Typescript](https://www.typescriptlang.org/)
-  - Rxjs
   - **Advanced React**
     - Controlled components and Control Props
     - Component State Reducers ✔️
     - Providers ✔️
-    - [Advanced React Patterns](https://egghead.io/courses/advanced-react-component-patterns)
+    - [Advanced React Patterns 🛠](https://egghead.io/courses/advanced-react-component-patterns)
     - **Advanced state management**
-      - State Architecture Patterns ✔️
-      - Redux Thunk ✔️
-      - Redux Saga ✔️
-      - Flux ✔️
+      - State Architecture Patterns 🛠
+      - Redux Thunk 🛠
+      - Redux Saga 🛠
 - **Mobile Development**
-  - **React Native**
-    - ...
-- **Electron**
-  - ...
+  - **React Native**💡
+- **Electron**💡
 - **Extras**
   - [Technical Debt](https://en.wikipedia.org/wiki/Technical_debt)
   - [Git flow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
@@ -202,11 +177,8 @@ Nothing - Not yet a priority
     - Preloading, Caching ✔️
     - Manging Dependencies ✔️
     - Babel Plugins ✔️
-    - Web Workers and Multithreading ✔️
     - [Cloud functions](https://cloud.google.com/functions/)
-    - LazyLoading, Parallel Loading ✔️
-    - [HTTP/2 ✔️](https://mozilla.github.io/meao/2017/06/26/http2/)
-    - Email Templating
+    - LazyLoading, Parallel Loading 🛠
 
 #
 
