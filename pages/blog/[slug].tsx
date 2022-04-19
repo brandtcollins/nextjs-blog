@@ -47,7 +47,7 @@ const PostPage: FunctionComponent<PostPageProps> = ({
   return (
     <div className="flex flex-col mb-24">
       <div className="py-8">
-        <Link href="/blog">Back</Link>
+        <Link href="/">Back</Link>
       </div>
       <div className="prose dark:prose-invert mx-auto ">
         <h1>{frontmatter.title}</h1>

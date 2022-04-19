@@ -8,9 +8,7 @@ tags:
   - nextjs
 ---
 
-# MyRoadmap
-
-This is a list of skills that I want to research and add to my toolset. It remains a work in progress!
+This is an everchanging list of skills that I want to research and add to my toolset.
 
 ✔️ - I'm comfortable with this.
 
