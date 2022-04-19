@@ -29,7 +29,7 @@ interface HomeProps {
 const Home: FunctionComponent<HomeProps> = ({ posts }) => {
   return (
     <div className="flex flex-col w-full">
-      <div className="mt-48 mb-6 py-6 px-4 border rounded">
+      <div className="mt-48 mb-24 py-6 px-4 border-2 rounded dark:border-lightGray dark:text-offWhite">
         This is filler text.
       </div>
       <BlogFeed posts={posts} />

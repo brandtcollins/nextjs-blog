@@ -16,23 +16,27 @@ const BlogFeed: FunctionComponent<BlogFeedProps> = ({ posts }) => {
 
   return (
     <div className="max-w-screen-xl w-full h-screen">
-      <h3 className="text-xl font-bold">2022</h3>
+      <h3 className="text-3xl font-bold text-medOffWhite dark:text-medBlue">
+        2022
+      </h3>
       {sortedPosts.reverse().map(({ slug, frontmatter }) => (
-        <div
-          key={slug}
-          className="border-b rounded overflow-hidden flex flex-col py-8 px-4 hover:bg-whitebgHover dark:hover:bg-hoverDarkBlue dark:border-lightGray dark:text-offWhite"
-        >
-          <Link href={`/blog/${slug}`}>
+        <Link href={`/blog/${slug}`}>
+          <div
+            key={slug}
+            className="rounded overflow-hidden flex py-6 px-4 hover:bg-whitebgHover dark:hover:bg-hoverDarkBlue dark:text-offWhite"
+          >
             <a>
-              <h1 className="text-xl">{frontmatter.title}</h1>
-              <h3 className="dark:text-lightGray">
+              <h1 className="text-xl text-darkBlue dark:text-offWhite inline-block">
+                {frontmatter.title}
+              </h1>
+              <h3 className=" text-mediumGray dark:text-medBlue inline-block pl-2">
                 {formatDistanceToNow(new Date(frontmatter.date), {
                   addSuffix: true,
                 })}
               </h3>
             </a>
-          </Link>
-        </div>
+          </div>
+        </Link>
       ))}
     </div>
   );
