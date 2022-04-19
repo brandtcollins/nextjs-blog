@@ -27,7 +27,14 @@ interface HomeProps {
 }
 
 const Home: FunctionComponent<HomeProps> = ({ posts }) => {
-  return <BlogFeed posts={posts} />;
+  return (
+    <div className="flex flex-col w-full">
+      <div className="mt-48 mb-6 py-6 px-4 border rounded">
+        This is filler text.
+      </div>
+      <BlogFeed posts={posts} />
+    </div>
+  );
 };
 
 export default Home;

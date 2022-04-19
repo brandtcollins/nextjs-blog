@@ -7,7 +7,7 @@ interface LayoutProps {}
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
   return (
     <div className="bg-offWhite dark:bg-darkBlue">
-      <div className="flex justify-center px-4">
+      <div className="flex justify-center mx-auto max-w-prose">
         {children}
         <Footer />
       </div>

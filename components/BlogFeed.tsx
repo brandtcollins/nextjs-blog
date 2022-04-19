@@ -16,6 +16,7 @@ const BlogFeed: FunctionComponent<BlogFeedProps> = ({ posts }) => {
 
   return (
     <div className="max-w-screen-xl w-full h-screen">
+      <h3 className="text-xl font-bold">2022</h3>
       {sortedPosts.reverse().map(({ slug, frontmatter }) => (
         <div
           key={slug}
