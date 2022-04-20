@@ -152,7 +152,7 @@ Nothing - Not yet a priority
 ### Advanced Front-End
 
 - **Javascript**
-  - [Typescript](https://www.typescriptlang.org/)
+  - [Typescript ✔️ 🛠](https://www.typescriptlang.org/)
   - **Advanced React**
     - Controlled components and Control Props
     - Component State Reducers ✔️
@@ -167,7 +167,6 @@ Nothing - Not yet a priority
 - **Electron**💡
 - **Extras**
   - [Technical Debt](https://en.wikipedia.org/wiki/Technical_debt)
-  - [Git flow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
   - **Web Performance**
     - CDN ✔️
     - Image Optimization ✔️
@@ -180,4 +179,14 @@ Nothing - Not yet a priority
 
 #
 
-### Design Related
+### Design
+
+- **Prototyping Tools**
+  - Figma ✔️
+  - Overflow ✔️
+  - Adobe UX ✔️
+- **A/B Testing**
+  - Sitespect 🛠
+  - Google Optimize 💡
+- **Other Tools**
+  - Hotjar ✔️
