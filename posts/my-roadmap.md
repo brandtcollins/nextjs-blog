@@ -182,11 +182,11 @@ Nothing - Not yet a priority
 ### Design
 
 - **Prototyping Tools**
-  - Figma ✔️
-  - Overflow ✔️
+  - [Figma ✔️](https://www.figma.com/)
+  - [Overflow ✔️](https://overflow.io/)
   - Adobe UX ✔️
 - **A/B Testing**
-  - Sitespect 🛠
-  - Google Optimize 💡
+  - [Sitespect 🛠](https://www.sitespect.com/)
+  - [Google Optimize 💡](https://optimize.google.com/)
 - **Other Tools**
-  - Hotjar ✔️
+  - [Hotjar ✔️](https://www.hotjar.com/)
