@@ -7,6 +7,7 @@ import { iFrontmatter, iPosts } from "../../ts/interfaces";
 import { formatDistanceToNow } from "date-fns";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from "next/head";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const slug = context.params?.slug;
@@ -46,6 +47,11 @@ const PostPage: FunctionComponent<PostPageProps> = ({
 
   return (
     <div className="flex flex-col mb-24">
+      <Head>
+        <title>{frontmatter.title}</title>
+        <meta property="og:title" content={frontmatter.title} key="title" />
+        <meta name="description" content={frontmatter.metaDesc}></meta>
+      </Head>
       <div className="py-8">
         <Link href="/">Back</Link>
       </div>

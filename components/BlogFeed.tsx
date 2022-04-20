@@ -29,11 +29,11 @@ const BlogFeed: FunctionComponent<BlogFeedProps> = ({ posts }) => {
               <h1 className="text-xl text-darkBlue dark:text-offWhite inline-block">
                 {frontmatter.title}
               </h1>
-              <h3 className=" text-mediumGray dark:text-medBlue inline-block pl-2">
+              <h2 className=" text-mediumGray dark:text-medBlue inline-block pl-2">
                 {formatDistanceToNow(new Date(frontmatter.date), {
                   addSuffix: true,
                 })}
-              </h3>
+              </h2>
             </div>
           </div>
         </Link>
