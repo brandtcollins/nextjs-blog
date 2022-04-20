@@ -23,7 +23,7 @@ const BlogFeed: FunctionComponent<BlogFeedProps> = ({ posts }) => {
         <Link href={`/blog/${slug}`}>
           <div
             key={slug}
-            className="rounded overflow-hidden flex py-6 px-4 hover:bg-whitebgHover dark:hover:bg-hoverDarkBlue dark:text-offWhite"
+            className="cursor-pointer rounded overflow-hidden flex py-6 px-4 hover:bg-whitebgHover dark:hover:bg-hoverDarkBlue dark:text-offWhite"
           >
             <a>
               <h1 className="text-xl text-darkBlue dark:text-offWhite inline-block">

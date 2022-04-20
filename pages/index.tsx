@@ -36,7 +36,12 @@ const Home: FunctionComponent<HomeProps> = ({ posts }) => {
           I'm Brandt, I am a front end web developer and UX/UI designer. Here, I
           write about things I've learned the hard way so you don't have to.
           There's also some on-going projects to check out{" "}
-          <Link href="/projects">here.</Link>
+          <Link href="/projects">
+            <span className="underline decoration-solid cursor-pointer">
+              here
+            </span>
+          </Link>
+          .
         </p>
       </div>
       <BlogFeed posts={posts} />
