@@ -25,7 +25,7 @@ const BlogFeed: FunctionComponent<BlogFeedProps> = ({ posts }) => {
             key={slug}
             className="cursor-pointer rounded overflow-hidden flex py-6 px-4 hover:bg-whitebgHover dark:hover:bg-hoverDarkBlue dark:text-offWhite"
           >
-            <a>
+            <div>
               <h1 className="text-xl text-darkBlue dark:text-offWhite inline-block">
                 {frontmatter.title}
               </h1>
@@ -34,7 +34,7 @@ const BlogFeed: FunctionComponent<BlogFeedProps> = ({ posts }) => {
                   addSuffix: true,
                 })}
               </h3>
-            </a>
+            </div>
           </div>
         </Link>
       ))}
