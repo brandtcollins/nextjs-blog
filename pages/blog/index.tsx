@@ -30,7 +30,7 @@ interface BlogProps {
 
 const Blog: FunctionComponent<BlogProps> = ({ posts }) => {
   return (
-    <div className="max-w-screen-xl w-full h-screen">
+    <div className="max-w-screen-xl w-full">
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}

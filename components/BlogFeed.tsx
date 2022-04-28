@@ -15,7 +15,7 @@ const BlogFeed: FunctionComponent<BlogFeedProps> = ({ posts }) => {
   });
 
   return (
-    <div className="max-w-screen-xl w-full h-screen">
+    <div className="max-w-screen-xl w-full">
       <h3 className="text-3xl font-bold text-medOffWhite dark:text-medBlue">
         2022
       </h3>

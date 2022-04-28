@@ -46,7 +46,7 @@ const PostPage: FunctionComponent<PostPageProps> = ({
   const router = useRouter();
 
   return (
-    <div className="flex flex-col mb-24">
+    <div className="flex flex-col mt-28">
       <Head>
         <title>{frontmatter.title}</title>
         <meta property="og:title" content={frontmatter.title} key="title" />

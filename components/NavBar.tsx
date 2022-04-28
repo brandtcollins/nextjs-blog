@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { FunctionComponent, useEffect, useState } from "react";
 
-interface FooterProps {}
+interface NavBarProps {}
 
-const Footer: FunctionComponent<FooterProps> = () => {
+const NavBar: FunctionComponent<NavBarProps> = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
@@ -32,7 +32,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
     toggleDarkMode();
   };
   return (
-    <div className="fixed bottom-0 h-24  w-full flex justify-center backdrop-blur-xl border-t border-black border-opacity-10">
+    <div className="fixed top-0 h-24  w-full flex justify-center backdrop-blur-xl border-t border-black border-opacity-10">
       <div className="max-w-screen-xl w-full flex items-center">
         <div className=" w-full h-full">
           <ul className="px-4 flex m-auto justify-center items-center dark:text-offWhite">
@@ -59,4 +59,4 @@ const Footer: FunctionComponent<FooterProps> = () => {
   );
 };
 
-export default Footer;
+export default NavBar;
