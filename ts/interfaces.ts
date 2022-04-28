@@ -11,3 +11,9 @@ export interface iPosts {
   slug: string;
   frontmatter: iFrontmatter;
 }
+
+export interface NavLinkItem {
+  page: string;
+  path: string;
+  external: boolean;
+}

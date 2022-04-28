@@ -1,11 +1,19 @@
 import Link from "next/link";
 import { FunctionComponent, useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { NavLinkItem } from "../ts/interfaces";
+
+const navLinks: NavLinkItem[] = [
+  { page: "Blog", path: "/", external: false },
+  { page: "Projects", path: "/projects", external: false },
+  { page: "Github", path: "https://github.com/brandtcollins", external: true },
+];
 
 interface NavBarProps {}
 
 const NavBar: FunctionComponent<NavBarProps> = () => {
   const [darkMode, setDarkMode] = useState(false);
-
+  const { asPath } = useRouter();
   const toggleDarkMode = () => {
     if (
       localStorage.theme === "dark" ||
@@ -36,13 +44,23 @@ const NavBar: FunctionComponent<NavBarProps> = () => {
       <div className="max-w-screen-xl w-full flex items-center">
         <div className=" w-full h-full">
           <ul className="px-4 flex m-auto justify-center items-center dark:text-offWhite">
-            <li className="mt-6 p-3 rounded-full py-2 px-4 mx-4">
-              <Link href="/">Blog</Link>
-            </li>
-            <li className="mt-6 p-3 rounded-full py-2 px-4 mx-4">
-              <Link href="/projects">Projects</Link>
-            </li>
-            <li className="mt-6 p-3 rounded-full py-2 px-4 mx-4">Github</li>
+            {navLinks.map((linkItem) => (
+              <li className={`mt-6 p-3 rounded-full py-2 px-4 mx-4`}>
+                {
+                  <Link href={linkItem.path} passHref>
+                    <a target={linkItem.external ? `_blank` : `_self`}>
+                      <span
+                        className={
+                          asPath === linkItem.path ? `underline` : `opacity-50`
+                        }
+                      >
+                        {linkItem.page}
+                      </span>
+                    </a>
+                  </Link>
+                }
+              </li>
+            ))}
           </ul>
         </div>
         <label className="relative flex justify-between items-center p-2">
