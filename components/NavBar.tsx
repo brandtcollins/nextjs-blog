@@ -2,10 +2,16 @@ import Link from "next/link";
 import { FunctionComponent, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { NavLinkItem } from "../ts/interfaces";
+const path = require("path");
 
 const navLinks: NavLinkItem[] = [
-  { page: "Blog", path: "/", external: false },
-  { page: "Projects", path: "/projects", external: false },
+  { page: "Blog", path: "/", activePath: "/blog", external: false },
+  {
+    page: "Projects",
+    path: "/projects",
+    activePath: "/projects",
+    external: false,
+  },
   { page: "Github", path: "https://github.com/brandtcollins", external: true },
 ];
 
@@ -14,6 +20,7 @@ interface NavBarProps {}
 const NavBar: FunctionComponent<NavBarProps> = () => {
   const [darkMode, setDarkMode] = useState(false);
   const { asPath } = useRouter();
+  let directoryPath = path.dirname(asPath);
   const toggleDarkMode = () => {
     if (
       localStorage.theme === "dark" ||
@@ -25,6 +32,8 @@ const NavBar: FunctionComponent<NavBarProps> = () => {
       document.documentElement.classList.remove("dark");
     }
   };
+
+  console.log(directoryPath);
 
   useEffect(() => {
     if (darkMode) {
@@ -51,7 +60,10 @@ const NavBar: FunctionComponent<NavBarProps> = () => {
                     <a target={linkItem.external ? `_blank` : `_self`}>
                       <span
                         className={
-                          asPath === linkItem.path ? `underline` : `opacity-50`
+                          asPath === linkItem.path ||
+                          directoryPath === linkItem.activePath
+                            ? `underline`
+                            : `opacity-50`
                         }
                       >
                         {linkItem.page}

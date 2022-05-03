@@ -16,4 +16,5 @@ export interface NavLinkItem {
   page: string;
   path: string;
   external: boolean;
+  activePath?: string;
 }
