@@ -32,9 +32,6 @@ const NavBar: FunctionComponent<NavBarProps> = () => {
       document.documentElement.classList.remove("dark");
     }
   };
-
-  console.log(directoryPath);
-
   useEffect(() => {
     if (darkMode) {
       localStorage.theme = "dark";
