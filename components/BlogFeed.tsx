@@ -20,11 +20,8 @@ const BlogFeed: FunctionComponent<BlogFeedProps> = ({ posts }) => {
         2022
       </h3>
       {sortedPosts.reverse().map(({ slug, frontmatter }) => (
-        <Link href={`/blog/${slug}`}>
-          <div
-            key={slug}
-            className="cursor-pointer rounded overflow-hidden flex py-6 px-4 hover:bg-whitebgHover dark:hover:bg-hoverDarkBlue dark:text-offWhite"
-          >
+        <Link key={slug} href={`/blog/${slug}`}>
+          <div className="cursor-pointer rounded overflow-hidden flex py-6 px-4 hover:bg-whitebgHover dark:hover:bg-hoverDarkBlue dark:text-offWhite">
             <div>
               <h1 className="text-xl text-darkBlue dark:text-offWhite inline-block">
                 {frontmatter.title}

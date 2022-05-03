@@ -51,7 +51,10 @@ const NavBar: FunctionComponent<NavBarProps> = () => {
         <div className=" w-full h-full">
           <ul className="px-4 flex m-auto justify-center items-center dark:text-offWhite">
             {navLinks.map((linkItem) => (
-              <li className={`mt-6 p-3 rounded-full py-2 px-4 mx-4`}>
+              <li
+                key={linkItem.page}
+                className={`mt-6 p-3 rounded-full py-2 px-4 mx-4`}
+              >
                 {
                   <Link href={linkItem.path} passHref>
                     <a target={linkItem.external ? `_blank` : `_self`}>
