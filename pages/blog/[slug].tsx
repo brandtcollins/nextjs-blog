@@ -53,7 +53,9 @@ const PostPage: FunctionComponent<PostPageProps> = ({
         <meta name="description" content={frontmatter.metaDesc}></meta>
       </Head>
       <div className="py-8">
-        <Link href="/">Back</Link>
+        <Link href="/">
+          <span className="dark:text-offWhite">Back</span>
+        </Link>
       </div>
       <div className="prose dark:prose-invert mx-auto ">
         <h1>{frontmatter.title}</h1>
