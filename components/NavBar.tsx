@@ -43,12 +43,15 @@ const NavBar: FunctionComponent<NavBarProps> = () => {
   return (
     <div className="fixed top-0 h-24  w-full flex justify-center backdrop-blur-xl">
       <div className="max-w-screen-xl w-full flex justify-between">
-        <Image
-          src="/brandtcollins_logo.svg"
-          alt="logo"
-          width={225}
-          height={125}
-        />
+        <Link href={"/"} passHref>
+          <Image
+            className="cursor-pointer"
+            src="/brandtcollins_logo.svg"
+            alt="logo"
+            width={225}
+            height={125}
+          />
+        </Link>
         <div className="h-full flex">
           {navLinks.map((linkItem) => (
             <div
